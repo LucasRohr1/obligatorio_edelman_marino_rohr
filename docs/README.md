@@ -5,45 +5,58 @@ Fecha de entrega: 18-oct-2021
 
 Creación y uso de repositorios locales y remotos
 
-Comandos Git ejecutados desde terminal y desde el IDE
+# Comandos Git ejecutados desde terminal y desde el IDE
 
+- git clone
+- git status
+- git add *
+- git branch
+- git checkout
+- git commit
+- git push
+- git push --set-upstream origin
+- git pull
 ## Versionado
 
-Buenas prácticas de versionado
+# Buenas prácticas de versionado
+Las practicas de versionado utilizadas se listan a continuacion:
+- Creación de ramas para que en *main* para trabajar sobre ellas y una vez se termine, hacer el merge al main
+- nomeclatura nemotécnica para mejor lectura y comprension del codigo
+- 
 
-Uso de ramas separadas de 'main'
+# Uso de ramas separadas de 'main'
 
-Resumen de commits y evolución del proyecto
-
+# Resumen de commits y evolución del proyecto
+Github permite ver el resumen de commits para cada rama
 ## Elicitación
 
-Evidencia de actividades de investigación
+# Evidencia de actividades de investigación
 
-Referencias a fuentes de información
+# Referencias a fuentes de información
 
-Caracterización de usuarios: User Personas
+# Caracterización de usuarios: User Personas
 
-Modelo conceptual del problema
+# Modelo conceptual del problema
 
 ## Especificación
 
-Definición de requerimientos funcionales y no funcionales
+# Definición de requerimientos funcionales y no funcionales
 
-User Stories / Use Cases detallados
+# User Stories / Use Cases detallados
 
-Bocetos de IU
+# Bocetos de IU
 
 ## Validación y verificación
 
-Verificar la especificación
+# Verificar la especificación
 
-Validar la solución con personas no involucradas en el proyecto
+# Validar la solución con personas no involucradas en el proyecto
 
 ## Reflexión
 
-Detalle del trabajo individual
+# Detalle del trabajo individual
 
-Técnicas aplicadas y aprendizajes
+# Técnicas aplicadas y aprendizajes
 
 
 
