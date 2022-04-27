@@ -5,7 +5,7 @@ Según la letra del obligatorio, le *objetivo* es crear una aplicación que perm
 ### Conceptos importantes:
 - Significado de NFT
 - Token
-- Collecciones
+- Colecciones
 - Creadores
 - Prueba de propiedad
 - Blockchain
