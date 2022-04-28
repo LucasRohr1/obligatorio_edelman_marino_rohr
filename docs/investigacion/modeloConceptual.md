@@ -3,6 +3,7 @@
 Según la letra del obligatorio, le *objetivo* es crear una aplicación que permita a los usuarios *comprar, vender y descubrir artículos digitales*. Por lo tanto, crearemos un modelo y mapa conceptual alrededor de este tema.
 
 ### Conceptos importantes:
+
 - Significado de NFT
 - Token
 - Colecciones: conjunto de tokens que comparten caracteristicas similares 
