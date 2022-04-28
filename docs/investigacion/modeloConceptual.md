@@ -34,3 +34,10 @@ Los NFTs son comercializados en un *marketplace*, un sitio web/ mobile donde se 
 En este proyecto se tendra un usuario unico, el cual podra comprar y vender NFTs en un marketplace al igual que coleccionarlos bajo su perfil.
 ### Alcance del proyecto
 En *ESPECIFICACION*, definiremos el alcance del proyecto y las funcionalidades del sistema que desarrollaremos.
+
+
+### Fuentes de informacion
+- https://www.investopedia.com/non-fungible-tokens-nft-5115211 
+- https://www.investopedia.com/terms/b/blockchain.asp 
+- https://ethereum.org/en/  
+- https://monkhub.com/blog/top-6-features-of-nft-marketplace/  
