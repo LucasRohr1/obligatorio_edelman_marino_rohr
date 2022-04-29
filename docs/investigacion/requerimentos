@@ -1,0 +1,23 @@
+### Problema a resolver
+Diseñar una aplicación que permita a los usuarios comprar, vender y descubrir artículos digitales. Según nuestra investigación, la aplicación debe tener los siguientes requerimientos:
+
+### Requerimientos funcionales del servicio
+
+Cada usuario debe poder:
+
+-Ingresar un presupuesto 
+-Subir un NFT (el usuario debe crearlo usando una herramienta de conveniencia y luego lo sube al sitio web)
+-Crear una colección de NFTs
+-Agregar NFTs a una lista de favoritos
+-Comprar
+    *Compra rapida
+    *Oferta (se debe ofertar un precio mayor o igual al precio base o el último precio ofertado)
+-Vender:
+    *Venta rápida (se debe especificar precio de venta)
+    *Subastar (se debe especificar duración de la subasta y precio base de venta)
+-Acceso a historial de transacciones
+-Poder ver un ranking de:
+    *Las ventas individuales más caras
+    *Colecciones con mayor volumen de transacciones
+    *Artistas con mayor volumen de transacciones
+    *Seccion de tendencias y NFts recomendados
