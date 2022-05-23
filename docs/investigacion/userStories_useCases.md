@@ -1,46 +1,3 @@
-### Problema a resolver
-Diseñar una aplicación que permita a los usuarios comprar, vender y descubrir artículos digitales. Según nuestra investigación, la aplicación debe tener los siguientes requerimientos:
-
-### Requerimientos funcionales del servicio
-Cada usuario debe poder:
-
--Ingresar un presupuesto 
--Subir un NFT (el usuario debe crearlo usando una herramienta de conveniencia y luego lo sube al sitio web)
--Crear una colección de NFTs
--Agregar NFTs a una lista de favoritos
--Comprar
-    *Compra rapida
-    *Oferta (se debe ofertar un precio mayor o igual al precio base o el último precio ofertado)
--Vender:
-    *Venta rápida (se debe especificar precio de venta)
-    *Subastar (se debe especificar duración de la subasta y precio base de venta)
--Acceso a historial de transacciones
--Poder ver un ranking de:
-    *Las ventas individuales más caras
-    *Colecciones con mayor volumen de transacciones
-    *Artistas con mayor volumen de transacciones
-    *Seccion de tendencias y NFts recomendados
-
-### Requerimientos no funcionales del servicio:
--La solucion sera una interfaz web a base de lenguajes: Javascript y HTML5
--Cada usuario tendrá credenciales propias y únicas para el ingreso a su perfil
--En lo que concierne a usabilidad:
-    *Tiempo de aprendizaje del sistema por un usuario deberá ser menor a 20 minutos
-    *La página debe proporcionar mensajes de error que sean informativos y orientados a usuario final
-    *Responsivo y adaptable a distintos tamaños de pantallas
-    *Tiempo de procesamiento de interacciones entre usuario y página debe ser menor a 5 segundos
-
-### Features del servicio:
--Cada NFT tiene información relevante:
-    *Descripción
-    *Historial de precio
-    *Dueño actual del NFT
--Buscar NFTs, colecciones y artistas mediante filtros
--Los NFTs tendrán asignadas categorías (deporte, entretenimiento, comedia, etc.) para facilitar el descubrimiento de artículos para los usuarios
-
-==============================
-
-
 # User Stories and Use Cases
 
 ## User Story #1 - Iniciar sesión
@@ -65,7 +22,7 @@ Cada usuario debe poder:
 | **Acción de los actores**        | **Respuesta del sistema**           |
 | ------------- |:-------------:|
 | Ingresa a la aplicación y puede ver la página de “Inicio sesión”.       | Muestra la página de inicio “NFT Marketplace” |
-| Se ingresa a la página luego de que las credenciales sean aceptadas      | Muestra la página principal (NFT Marketplace) del sistema      |
+| Se ingresa a la página luego de que las credenciales sean aceptadas     | Muestra la página principal (NFT Marketplace) del sistema      |
 
 ### Cursos alternativos:
 
@@ -109,8 +66,8 @@ Cada usuario debe poder:
 
 
 
-===========================================================
-## User Story #2 - Comprar un NFT
+
+## User Story #3 - Comprar un NFT
 
 ### Narrativa
 - **Como:** Usuario de la aplicación
@@ -122,7 +79,7 @@ Cada usuario debe poder:
 - El sistema despliega la información correspondiente al NFT de manera correcta
 
 
-## Use Case #2 - Comprar un NFT
+## Use Case #3 - Comprar un NFT
 
 **Actor:** usuario
 #### Curso normal para narrativa:
@@ -130,9 +87,7 @@ Cada usuario debe poder:
 | **Acción de los actores**        | **Respuesta del sistema**           |
 | ------------- |:-------------:|
 | Desde “NFT Marketplace” o “Colecciones” selecciono el artículo que deseo comprar | Se abre una ventana “pop up” donde me muestra la información del NFT y opciones de compra| 
-
 | Hago click en el botón “Comprar Ahora” | iSe abre una ventana “pop up” para confirmar la compra |
-
 | Hago click en el botón “Confirmar” | Se comunica que la compra fue exitosa |
  
 
@@ -142,9 +97,10 @@ Cada usuario debe poder:
 - El usuario no tiene suficiente dinero para realizar la compra, el sistema se lo notifica
 
 
-==================================
 
-## User Story #3 - Oferta de compra de NFT
+
+
+## User Story #4 - Oferta de compra de NFT
 
 ### Narrativa
 - **Como:** Usuario de la aplicación
@@ -158,7 +114,7 @@ Cada usuario debe poder:
 - El sistema alerta al usuario mediante una ventana “pop up” y/ o email sobre el estado de la subasta
 
 
-## Use Case #3 - Oferta de compra de NFT
+## Use Case #4 - Oferta de compra de NFT
 
 **Actor:** usuario
 #### Curso normal para narrativa:
@@ -166,9 +122,7 @@ Cada usuario debe poder:
 | **Acción de los actores**        | **Respuesta del sistema**           |
 | ------------- |:-------------:|
 | Desde “NFT Marketplace” o “Colecciones” selecciono el artículo que deseo comprar | Se abre una ventana “pop up” donde me muestra la información del NFT y opciones de compra | 
-
 | Hago click en el botón “Realizar oferta” | Se abre una ventana “pop up” donde se pide ingresar una oferta |
-
 | Se ingresa una oferta | El sistema comunica que se ha procesado exitosamente la oferta. Se congela el monto de dinero ofertado de la cuenta del usuario. Se actualiza la información de la subasta |
 
 ### Cursos alternativos:
@@ -176,10 +130,9 @@ Cada usuario debe poder:
 - Si justo al ofertar, otra persona hace la misma oferta un segundo antes, el sistema notifica luego de hacer “click” en boton “Ofertar” que la oferta ha subido de precio
 
 
-==========================================================
 
 
-## User Story #4 - Venta de NFT
+## User Story #5 - Venta de NFT
 
 ### Narrativa
 - **Como:** Usuario de la aplicación
@@ -192,7 +145,7 @@ Cada usuario debe poder:
 
 
 
-## Use Case #4 - Vender un NFT
+## Use Case #5 - Vender un NFT
 
 **Actor:** usuario
 #### Curso normal para narrativa:
@@ -200,9 +153,7 @@ Cada usuario debe poder:
 | **Acción de los actores**        | **Respuesta del sistema**           |
 | ------------- |:-------------:|
 | Desde “Perfil” se selecciona el artículo que deseo vender o desde la sección “Ventas”, oprimo “Vender nuevo”  | Se abre una ventana “pop up” donde me muestra la información del NFT y opciones de venta| 
-
 | Hago click en “Vender” | Se abre una ventana “pop up” donde pide ingresar precio de venta y un botón de “Confirmar venta” |
-
 | Se oprime “Confirmar venta” | El sistema vuelve al “pop up” anterior que muestra la información del NFT y se le notifica al usuario que la solicitud fue procesada correctamente. Se ve listado el NFT a vender en la lista de ventas del usuario |
 
 ### Cursos alternativos:
@@ -211,10 +162,10 @@ Cada usuario debe poder:
 
 
 
-=====================================================
 
 
-## User Story #5 - Subasta de NFT
+
+## User Story #6 - Subasta de NFT
 
 ### Narrativa
 - **Como:** Usuario de la aplicación
@@ -228,7 +179,7 @@ Cada usuario debe poder:
 
 
 
-## Use Case #5 - Subasta un NFT
+## Use Case #6 - Subasta un NFT
 
 **Actor:** usuario
 #### Curso normal para narrativa:
@@ -236,9 +187,7 @@ Cada usuario debe poder:
 | **Acción de los actores**        | **Respuesta del sistema**           |
 | ------------- |:-------------:|
 | Desde “Perfil” selecciono el artículo que deseo subastar o desde la sección “Ventas”, oprimo “Vender nuevo” | Se abre una ventana “pop up” donde me muestra la información del NFT y opciones de venta| 
-
 | Hago click en “Subastar” | Se abre una ventana “pop up” donde pide ingresar precio base de venta, tiempo de duración de la subasta, y un botón de “Confirmar subasta” |
-
 | Se oprime “Confirmar subasta” | El sistema vuelve al “pop up” anterior que muestra la información del NFT y notifica al usuario que se ha procesado la solicitud correctamente. Se ve listado el NFT a vender en la lista de ventas del usuario |
 
 ### Cursos alternativos:
@@ -247,12 +196,12 @@ Cada usuario debe poder:
 - El usuario ingresa una fecha de expiración de la subasta anterior a la fecha actual
 
 
-=============================================================
 
 
 
 
-## User Story #6 - Subir un NFT al perfil de usuario
+
+## User Story #7 - Subir un NFT al perfil de usuario
 
 ### Narrativa
 - **Como:** Usuario de la aplicación
@@ -265,7 +214,7 @@ Cada usuario debe poder:
 
 
 
-## Use Case #6 - Subir un NFT al Perfil de usuario
+## Use Case #7 - Subir un NFT al Perfil de usuario
 
 **Actor:** usuario
 #### Curso normal para narrativa:
@@ -273,13 +222,11 @@ Cada usuario debe poder:
 | **Acción de los actores**        | **Respuesta del sistema**           |
 | ------------- |:-------------:|
 | Desde la sección “Mis NFTs” dentro de “Perfil” se selecciona “Agregar nuevo” | Se abre una ventana “pop up” donde me muestran distinto campos para ingresar información del NFT y una opción para subir un archivo | 
-
 | Hago click en “Cargar NFT” | Se abre la biblioteca del escritorio de la computadora |
-
 | Se oprime “Cargar” | El sistema vuelve al “pop up” anterior que muestra la información del NFT y se ve el archivo cargado. |
+| Se oprime el botón “Subir NFT” | Se ve listado el NFT en la sección “Mis NFTs” de “Perfil” | 
 
-| Se oprime el botón “Subir NFT” | Se ve listado el NFT en la sección “Mis NFTs” de “Perfil”
-|
+
 ### Cursos alternativos:
 
 - El usuario no agrega una descripción y el sistema le niega subir el NFT ya que es información requerida 
@@ -288,10 +235,10 @@ Cada usuario debe poder:
 
 
 
-====================================================
 
 
-## User Story #7- Crear una colección
+
+## User Story #8- Crear una colección
 
 ### Narrativa
 - **Como:** Usuario de la aplicación
@@ -302,7 +249,7 @@ Cada usuario debe poder:
 - El sistema añade la nueva colección exitosamente a la lista de colecciones bajo el perfil del usuario
 
 
-## Use Case #7 - Crear una colección en mi perfil
+## Use Case #8 - Crear una colección en mi perfil
 
 **Actor:** usuario
 #### Curso normal para narrativa:
@@ -310,10 +257,8 @@ Cada usuario debe poder:
 | **Acción de los actores**        | **Respuesta del sistema**           |
 | ------------- |:-------------:|
 Se abre una ventana “pop up” donde me muestran distinto campos para ingresar información del NFT y una opción para subir un archivo | 
-
 | Hago click en “Cargar NFT” | Se abre la biblioteca del escritorio de la computadora |
-
-| Se oprime “Cargar” | El sistema vuelve al “pop up” anterior que muestra la información del NFT y se ve el archivo cargado.
+| Se oprime “Cargar” | El sistema vuelve al “pop up” anterior que muestra la información del NFT y se ve el archivo cargado. |
 
 ### Cursos alternativos:
 
@@ -323,10 +268,10 @@ Se abre una ventana “pop up” donde me muestran distinto campos para ingresar
 
 
 
-=========================================================
 
 
-## User Story #8 - Pestaña de rankings
+
+## User Story #9 - Pestaña de rankings
 
 ### Narrativa
 - **Como:** Usuario de la aplicación
@@ -337,7 +282,7 @@ Se abre una ventana “pop up” donde me muestran distinto campos para ingresar
 - El sistema carga los rankings correctamente
 
 
-## Use Case #8 - Pestaña de rankings
+## Use Case #9 - Pestaña de rankings
 
 **Actor:** usuario
 #### Curso normal para narrativa:
@@ -345,5 +290,4 @@ Se abre una ventana “pop up” donde me muestran distinto campos para ingresar
 | **Acción de los actores**        | **Respuesta del sistema**           |
 | ------------- |:-------------:|
 | Selecciono un NFT del ranking     | Se abre un “pop up” y se muestra toda la información del NFT |
-
 | Al navegar cada sección de la página de rankings  | Se ve información del NFT relacionada a ventas (ejemplo: costo de venta, cantidad ventas etc) |
