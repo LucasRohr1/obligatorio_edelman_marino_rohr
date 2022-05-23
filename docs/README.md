@@ -38,7 +38,7 @@ Github permite ver el resumen de commits para cada rama
 # Caracterización de usuarios: User Personas
 
 # Modelo conceptual del problema
-[Ir al modelo conceptual](./docs/investigacion/modeloConceptual.md)
+
 ## Especificación
 
 # Definición de requerimientos funcionales y no funcionales
