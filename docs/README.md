@@ -16,12 +16,13 @@ Creación y uso de repositorios locales y remotos
 - git push
 - git push --set-upstream origin
 - git pull
+- git branch -d _nombreDeRama_
 ## Versionado
 
 # Buenas prácticas de versionado
 Las practicas de versionado utilizadas se listan a continuacion:
 - Creación de ramas para que en *main* para trabajar sobre ellas y una vez se termine, hacer el merge al main
-- nomeclatura nemotécnica para mejor lectura y comprension del codigo
+- Nomeclatura nemotécnica para mejor lectura y comprension del codigo
 - 
 
 # Uso de ramas separadas de 'main'
@@ -37,7 +38,7 @@ Github permite ver el resumen de commits para cada rama
 # Caracterización de usuarios: User Personas
 
 # Modelo conceptual del problema
-
+[Ir al modelo conceptual](./docs/investigacion/modeloConceptual.md)
 ## Especificación
 
 # Definición de requerimientos funcionales y no funcionales
