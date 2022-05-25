@@ -12,6 +12,7 @@ const listaPeliculas = new ListaPeliculas();
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const topAppBar = new MDCTopAppBar(topAppBarElement);
 
+
 const tabBar = new MDCTabBar(document.querySelector(".mdc-tab-bar"));
 tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
   document.querySelectorAll(".content").forEach((element, index) => {

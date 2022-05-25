@@ -1,7 +1,7 @@
 @use "@material/theme" with (
-  $primary: #00bcd4,
-  $secondary: #f44336,
-  $background: #c7c7c7,
+  $primary: #1F1B24 ,
+  $secondary: #03DAC5,
+  $background: #121212,
 );
 @use '@material/button/mdc-button';
 @use '@material/button';
@@ -23,12 +23,16 @@
 @use "@material/menu/mdc-menu";
 @use "@material/select/styles";
 @use "@material/snackbar/mdc-snackbar";
+@use "@material/image-list";
+@use "@material/image-list/mdc-image-list";
 
 @include card.core-styles;
 @include textfield.core-styles;
 
 html {
   scroll-behavior: smooth;
+  background-color: #121212;
+  color: white;
 }
 
 body {
@@ -43,6 +47,10 @@ body {
 .mdc-top-app-bar {
   z-index: 7;
   @include icon-button.core-styles;
+}
+
+.my-image-list {
+  @include image-list.standard-columns(5);
 }
 
 section {
