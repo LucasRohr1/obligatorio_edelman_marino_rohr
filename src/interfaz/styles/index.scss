@@ -1,7 +1,7 @@
 @use "@material/theme" with (
-  $primary: #1F1B24 ,
+  $primary: #121212,
   $secondary: #03DAC5,
-  $background: #121212,
+  $background: #000000,
 );
 @use '@material/button/mdc-button';
 @use '@material/button';
@@ -31,7 +31,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #121212;
+  background-color: rgb(15, 15, 15);
   color: white;
 }
 
@@ -50,7 +50,16 @@ body {
 }
 
 .my-image-list {
-  @include image-list.standard-columns(4);
+  @include image-list.standard-columns(5);
+}
+
+.my-card-content {
+  padding: 16px;
+}
+
+.my-card {
+  height: 350px;
+  width: 350px;
 }
 
 section {
@@ -142,7 +151,7 @@ img {
   display: inline-flex;
   width: 1.5rem;
   height: 1.5rem;
-  background: #03DAC5; //SECUNDARY COLOR
+  background: #03DAC5; //SECONDARY COLOR
   text-decoration: none;
   align-items: center;
   justify-content: center;
@@ -157,9 +166,9 @@ img {
   background: #000;
 }
 
-/* Don't need button navigation */
-@supports (scroll-snap-type) {
-  .slider > a {
-    display: none;
-  }
-}
+// /* Don't need button navigation */
+// @supports (scroll-snap-type) {
+//   .slider > a {
+//     display: none;
+//   }
+// }
