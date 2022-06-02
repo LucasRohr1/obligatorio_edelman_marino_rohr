@@ -1,7 +1,6 @@
 @use "@material/theme" with (
-  $primary: #121212,
+  $primary: #121212 ,
   $secondary: #03DAC5,
-  $background: #000000,
 );
 @use '@material/button/mdc-button';
 @use '@material/button';
@@ -31,7 +30,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: rgb(15, 15, 15);
+  background-color: #121212;
   color: white;
 }
 
@@ -47,6 +46,7 @@ body {
 .mdc-top-app-bar {
   z-index: 2;
   @include icon-button.core-styles;
+  box-shadow: 0px -4px 10px 1px #03DAC5; //SECONDARY OR PRIMARY 
 }
 
 .my-image-list {
@@ -58,8 +58,10 @@ body {
 }
 
 .my-card {
-  height: 350px;
-  width: 350px;
+  padding: 20px;
+  height: 250px;
+  width: 250px;  
+  background-color: #000;
 }
 
 section {
