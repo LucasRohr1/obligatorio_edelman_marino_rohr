@@ -1,5 +1,10 @@
+$primary: #2a2a2a;
+$secondary: #80deea;
+$background: #121212;
+
+
 @use "@material/theme" with (
-	$primary: #2a2a2a ,
+	$primary: #2a2a2a,
 	$secondary: #80deea,
 	$background: #121212
 );
@@ -33,7 +38,7 @@
 
 html {
 	scroll-behavior: smooth;
-	background-color: #121212;
+	background-color: $background;
 	color: white;
 }
 
@@ -41,6 +46,38 @@ body {
 	font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 	margin: 0px auto;
 }
+
+img {
+	object-fit:cover;
+	position:absolute;
+	border-radius: 10px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+// HEADER
+
+.app-bar {
+	position: absolute;
+}
+
+.mdc-top-app-bar {
+	z-index: 2;
+	@include icon-button.core-styles;
+	box-shadow: 0px -4px 10px 1px black; //SECONDARY OR PRIMARY 
+}
+
+// END HEADER
+
+.material-icons{
+	color: white;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+// HOME SCREEN
 
 #home_screen{
 	margin-top: 84px;
@@ -54,20 +91,6 @@ body {
 	color: red;
 }
 
-.app-bar {
-	position: absolute;
-}
-
-.mdc-top-app-bar {
-	z-index: 2;
-	@include icon-button.core-styles;
-	box-shadow: 0px -4px 10px 1px black; //SECONDARY OR PRIMARY 
-}
-
-.my-image-list {
-	@include image-list.standard-columns(5);
-}
-
 .my-card-content {
 	padding: 16px;
 }
@@ -75,7 +98,16 @@ body {
 .my-card {
 	height: 300px;
 	width: 250px;  
-	background-color: #2a2a2a;
+	background-color: $primary;
+}
+
+mdc-card__actions{
+	display: flex;
+	justify-content: space-around;
+}
+
+.botonCorazon{
+	text-align: right;
 }
 
 .slider {
@@ -87,6 +119,7 @@ body {
 
 .slides {
 	display: flex;
+	@include icon-button.core-styles;
 	
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
@@ -106,7 +139,7 @@ body {
 	height: 10px;
 }
 .slides::-webkit-scrollbar-thumb {
-	background: #80deea; // SECONDARY COLOR
+	background: $secondary; // SECONDARY COLOR
 	border-radius: 10px;
 }
 .slides::-webkit-scrollbar-track {
@@ -132,25 +165,17 @@ body {
 	box-shadow: 0px 0px 8px black; //SECONDARY OR PRIMARY COLOR
 }
 .slides > div:hover {
-	transform: scale(0.9); 
+	transform: scale(0.95); 
 	box-shadow: 0px 0px 3px black; //SECONDARY OR PRIMARY COLOR
 	transition: .7s ease box-shadow, .7s ease transform;
 }
-img {
-	object-fit:cover;
-	position:absolute;
-	border-radius: 10px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
+
 
 .slider > a {
 	display: inline-flex;
 	width: 1.5rem;
 	height: 1.5rem;
-	background: #80deea; //SECONDARY COLOR
+	background: $secondary; //SECONDARY COLOR
 	box-shadow: 0px 0px 8px black; //SECONDARY OR PRIMARY COLOR
 	text-decoration: none;
 	align-items: center;
@@ -165,3 +190,8 @@ img {
 .slider > a:focus {
 	background: #000;
 }
+.slides iconos {
+	color: white;
+}
+
+// END HOME SCREEN
