@@ -101,13 +101,18 @@ img {
 	background-color: $primary;
 }
 
+.buttonsCard{
+	display: flex;
+	justify-content: space-between;
+}
+
 mdc-card__actions{
 	display: flex;
 	justify-content: space-around;
 }
 
 .botonCorazon{
-	text-align: right;
+	padding-left: 30px;;
 }
 
 .slider {
