@@ -1,19 +1,27 @@
-const MIN_ANIO = 1888;
-const MAX_ANIO = 2021;
+class ListaDeElementos{ //Se crean los elementos
+  constructor(){
+    this.lista=[];
+  }
+  agregar(elemento){
+      this.lista.push(elemento);
+  }
+  valores(){
+      return this.lista;
+  }
+}
 
-export default class Pelicula {
-
-  constructor(titulo, genero, anio) {
-    this.titulo = titulo;
-    this.genero = genero;
-    this.setAnio(anio);
+class Usuario {
+  constructor(username, password) {
+    this.username = username;
+    this.password = password;
+    this.setNfts();
+    this.setFavorites();
   }
 
-  setAnio(anio) {
-    if (anio >= MIN_ANIO && anio <= MAX_ANIO) {
-      this.anio = anio;
-    } else {
-      throw new Error(`El año ingresado es incorrecto. La pelicula debe ser de los años entre ${MIN_ANIO} y ${MAX_ANIO}`);
-    }
+  setNfts() {
+    let nfts = []
+  }
+  setFavorites(){
+    let favorites = []
   }
 }

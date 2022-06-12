@@ -6,27 +6,33 @@ import { MDCSelect } from '@material/select';
 import {MDCSnackbar} from '@material/snackbar';
 import ListaPeliculas from '../../dominio/lista-peliculas.mjs';
 import Pelicula from '../../dominio/pelicula.mjs';
+import * as $ from "jquery/dist/jquery.min"
+import Usuario from '../../dominio/pelicula.mjs';
 
-const listaPeliculas = new ListaPeliculas();
+const usuario = new Usuario();
 
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const topAppBar = new MDCTopAppBar(topAppBarElement);
 
+const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
 
-const tabBar = new MDCTabBar(document.querySelector(".mdc-tab-bar"));
-tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
-  document.querySelectorAll(".content").forEach((element, index) => {
-    if (index === activatedEvent.detail.index) {
-      element.classList.remove("sample-content--hidden");
-    } else {
-      element.classList.add("sample-content--hidden");
-    }
+$(document).ready(function(){
+  $(".hamburger").on("click", function(){
+    alert("Funciona")
+  });
+  $(".liked").on("click", function(){
+    alert("liked nfts")
+  });
+  $(".user").on("click", function(){
+    alert("user")
+    usuario.agregar(new Usuario("Juan", "1234"));
+    let datos = usuario.valores()
+    alert(datos[0])
   });
 });
 
-const textFieldTitle = new MDCTextField(document.getElementById('title'));
-const textFieldYear = new MDCTextField(document.getElementById('year'));
-const selectGenre = new MDCSelect(document.querySelector('.mdc-select'));
+
+// ESTO SALE DE PELICULAS:
 
 const addButton = new MDCRipple(document.getElementById('addButton'));
 addButton.listen('click', () => {
