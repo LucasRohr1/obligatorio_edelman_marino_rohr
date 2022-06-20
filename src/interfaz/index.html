@@ -30,14 +30,19 @@
 		<H1>TRENDING <span>HOT</span>🔥</H1>
 		<div class="slider">
 			<div class="slides">
-				<div id="tendencia-1">
+				<div id="tendencia-1" onclick="showContainer('tendencia1-container')">
 					<div class="mdc-card fill-color($primary) my-card">
-						<div class="mdc-card__primary-action">
+            
+						<div class="mdc-card__primary-action" tabindex="0">
 							<div class="mdc-card__media mdc-card__media--square" style="background-image:url(./img/Tendencias/Tendencia1.jpg);"></div>
+              
 						</div>
+          
 						<div class="mdc-card__actions">
+           
 							<div class="mdc-card__action-buttons buttonsCard">
-								<button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action-button">COMPRAR</button>
+								<button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action-button" id="comprarPrueba">COMPRAR</button>
+                
 								<div class="mdc-card__action-icons botonCorazon">
 									<button class="mdc-button"><span class="material-icons">favorite</span></button>
 								</div>
@@ -45,7 +50,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="tendencia-2">
+				<div id="tendencia-2" onclick="showContainer('tendencia2-container')">
 					<div class="mdc-card fill-color($primary) my-card">
 						<div class="mdc-card__primary-action">
 							<div class="mdc-card__media mdc-card__media--square" style="background-image:url(./img/Tendencias/tendencia2.jpg);"></div>
@@ -60,7 +65,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="tendencia-3">
+				<div id="tendencia-3" onclick="showContainer('tendencia3-container')">
 					<div class="mdc-card fill-color($primary) my-card">
 						<div class="mdc-card__primary-action">
 							<div class="mdc-card__media mdc-card__media--square" style="background-image:url(./img/Tendencias/tendencia3.jpg);"></div>
@@ -75,7 +80,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="tendencia-4">
+				<div id="tendencia-4" onclick="showContainer('tendencia4-container')">
 					<div class="mdc-card fill-color($primary) my-card">
 						<div class="mdc-card__primary-action">
 							<div class="mdc-card__media mdc-card__media--square" style="background-image:url(./img/Tendencias/tendencia4.jpg);"></div>
@@ -90,7 +95,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="tendencia-5">
+				<div id="tendencia-5" onclick="showContainer('tendencia5-container')">
 					<div class="mdc-card fill-color($secondary) my-card">
 						<div class="mdc-card__primary-action">
 							<div class="mdc-card__media mdc-card__media--square" style="background-image:url(./img/Tendencias/tendencia5.jpg);"></div>
@@ -102,7 +107,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="tendencia-6">
+				<div id="tendencia-6" onclick="showContainer('tendencia6-container')">
             <div class="mdc-card fill-color($secondary) my-card">
               <div class="mdc-card__primary-action">
                 <div class="mdc-card__media mdc-card__media--square" style="background-image:url(./img/Tendencias/tendencia6.jpg);"></div>
@@ -114,7 +119,7 @@
               </div>
             </div>
           </div>
-				<div id="tendencia-7">
+				<div id="tendencia-7" onclick="showContainer('tendencia7-container')">
             <div class="mdc-card fill-color($secondary) my-card">
               <div class="mdc-card__primary-action">
                 <div class="mdc-card__media mdc-card__media--square" style="background-image:url(./img/Tendencias/tendencia7.jpg);"></div>
@@ -126,7 +131,7 @@
               </div>
             </div>
           </div>
-				<div id="tendencia-8">
+				<div id="tendencia-8" onclick="showContainer('tendencia8-container')">
             <div class="mdc-card fill-color($secondary) my-card">
               <div class="mdc-card__primary-action">
                 <div class="mdc-card__media mdc-card__media--square" style="background-image:url(./img/Tendencias/tendencia8.jpg);"></div>
@@ -138,7 +143,7 @@
               </div>
             </div>
           </div>
-				<div id="tendencia-9">
+				<div id="tendencia-9" onclick="showContainer('tendencia9-container')">
             <div class="mdc-card fill-color($secondary) my-card">
               <div class="mdc-card__primary-action">
                 <div class="mdc-card__media mdc-card__media--square" style="background-image:url(./img/Tendencias/tendencia9.jpg);"></div>
@@ -153,6 +158,181 @@
 				</div>
 			</div>
 		</div>
+
+<!-- Pop Ups para comprar por cada NFT, de cada seccion -->
+
+    <!-- duplicar esto -->
+    <div id="tendencia1-container" class="tendencia-container">
+      <div id="main-information">
+        <div id="tendencia-img">
+          <img src="./img/Tendencias/Tendencia1.jpg">            
+        </div>
+        <div id="tendencia-data">
+          <div id="tendencia-price">Precio: </br>3.4 ETH</div>
+        </br>
+          <div id="tendencia-owner">Dueno: </br>carlitosnfts</div>
+        </div>
+      </div>
+      <div id="close-container" onclick="closeContainer('tendencia1-container')">X</div>
+      <div id="tendencia-description">This nft collection about monkeys and hats</div>
+      <div id="tendencia-actions">
+        <button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action-button">Confirmar Compra</button>
+      </div>          
+    </div>
+    <!-- fin duplicar -->
+
+    <div id="tendencia2-container" class="tendencia-container">
+      <div id="main-information">
+        <div id="tendencia-img">
+          <img src="./img/Tendencias/Tendencia2.jpg">            
+        </div>
+        <div id="tendencia-data">
+          <div id="tendencia-price">Precio: </br>6 ETH</div>
+        </br>
+          <div id="tendencia-owner">Dueno: </br>Luis Suarez</div>
+        </div>
+      </div>
+      <div id="close-container" onclick="closeContainer('tendencia2-container')">X</div>
+      <div id="tendencia-description">Viva la vida</div>
+      <div id="tendencia-actions">
+        <button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action-button">Confirmar Compra</button>
+      </div>          
+    </div>
+
+
+    <div id="tendencia3-container" class="tendencia-container">
+      <div id="main-information">
+        <div id="tendencia-img">
+          <img src="./img/Tendencias/Tendencia3.jpg">            
+        </div>
+        <div id="tendencia-data">
+          <div id="tendencia-price">Precio: </br>3 ETH</div>
+        </br>
+          <div id="tendencia-owner">Dueno: </br>pepe</div>
+        </div>
+      </div>
+      <div id="close-container" onclick="closeContainer('tendencia3-container')">X</div>
+      <div id="tendencia-description">Es un nene</div>
+      <div id="tendencia-actions">
+        <button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action-button">Confirmar Compra</button>
+      </div>          
+    </div>
+
+    <div id="tendencia4-container" class="tendencia-container">
+      <div id="main-information">
+        <div id="tendencia-img">
+          <img src="./img/Tendencias/Tendencia4.jpg">            
+        </div>
+        <div id="tendencia-data">
+          <div id="tendencia-price">Precio: </br>4 ETH</div>
+        </br>
+          <div id="tendencia-owner">Dueno: </br>Leonardo Da Vinci</div>
+        </div>
+      </div>
+      <div id="close-container" onclick="closeContainer('tendencia4-container')">X</div>
+      <div id="tendencia-description">Hola que tal</div>
+      <div id="tendencia-actions">
+        <button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action-button">Confirmar Compra</button>
+      </div>          
+    </div>
+
+    <div id="tendencia5-container" class="tendencia-container">
+      <div id="main-information">
+        <div id="tendencia-img">
+          <img src="./img/Tendencias/Tendencia5.jpg">            
+        </div>
+        <div id="tendencia-data">
+          <div id="tendencia-price">Precio: </br>1 ETH</div>
+        </br>
+          <div id="tendencia-owner">Dueno: </br>Melon</div>
+        </div>
+      </div>
+      <div id="close-container" onclick="closeContainer('tendencia5-container')">X</div>
+      <div id="tendencia-description">Simple NFT</div>
+      <div id="tendencia-actions">
+        <button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action-button">Confirmar Compra</button>
+      </div>          
+    </div>
+
+    <div id="tendencia6-container" class="tendencia-container">
+      <div id="main-information">
+        <div id="tendencia-img">
+          <img src="./img/Tendencias/Tendencia6.jpg">            
+        </div>
+        <div id="tendencia-data">
+          <div id="tendencia-price">Precio: </br>12 ETH</div>
+        </br>
+          <div id="tendencia-owner">Dueno: </br>Melon</div>
+        </div>
+      </div>
+      <div id="close-container" onclick="closeContainer('tendencia6-container')">X</div>
+      <div id="tendencia-description">Uno de mis preferidos</div>
+      <div id="tendencia-actions">
+        <button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action-button">Confirmar Compra</button>
+      </div>          
+    </div>
+
+    <div id="tendencia7-container" class="tendencia-container">
+      <div id="main-information">
+        <div id="tendencia-img">
+          <img src="./img/Tendencias/Tendencia7.jpg">            
+        </div>
+        <div id="tendencia-data">
+          <div id="tendencia-price">Precio: </br>23232 ETH</div>
+        </br>
+          <div id="tendencia-owner">Dueno: </br>Papa</div>
+        </div>
+      </div>
+      <div id="close-container" onclick="closeContainer('tendencia7-container')">X</div>
+      <div id="tendencia-description">Este es muy iconico</div>
+      <div id="tendencia-actions">
+        <button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action-button">Confirmar Compra</button>
+      </div>          
+    </div>
+
+    <div id="tendencia8-container" class="tendencia-container">
+      <div id="main-information">
+        <div id="tendencia-img">
+          <img src="./img/Tendencias/Tendencia8.jpg">            
+        </div>
+        <div id="tendencia-data">
+          <div id="tendencia-price">Precio: </br>1200 ETH</div>
+        </br>
+          <div id="tendencia-owner">Dueno: </br>Melon</div>
+        </div>
+      </div>
+      <div id="close-container" onclick="closeContainer('tendencia8-container')">X</div>
+      <div id="tendencia-description">This nft collection about monkeys and hats</div>
+      <div id="tendencia-actions">
+        <button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action-button">Confirmar Compra</button>
+      </div>          
+    </div>
+
+    <div id="tendencia9-container" class="tendencia-container">
+      <div id="main-information">
+        <div id="tendencia-img">
+          <img src="./img/Tendencias/Tendencia9.jpg">            
+        </div>
+        <div id="tendencia-data">
+          <div id="tendencia-price">Precio: </br>112 ETH</div>
+        </br>
+          <div id="tendencia-owner">Dueno: </br>Bored Ape Yatch Club</div>
+        </div>
+      </div>
+      <div id="close-container" onclick="closeContainer('tendencia5-container')">X</div>
+      <div id="tendencia-description">This nft collection is PREMIUM</div>
+      <div id="tendencia-actions">
+        <button class="mdc-button mdc-button--raised mdc-card__action mdc-card__action-button">Confirmar Compra</button>
+      </div>          
+    </div>
+
+
+
+
+
+
+
+
 			<!-- ARTE SECTION -->
 			<h1>ARTE</h1>
 			<div class="slider">
@@ -541,11 +721,50 @@
 	<!-- END gif SECTION -->
 
 <!-- END HOME SECTION-->
-</section>
-	<!-- PERFIL -->
-	<article>
+<script>
+  function showContainer(tendencia) {
+    // var x = document.getElementById("tendencia1-container");
+    var x = document.getElementById(tendencia);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
-	</article>
+  function closeContainer(tendencia) {
+    // var x = document.getElementById("tendencia1-container");
+    var x = document.getElementById(tendencia);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+<script>
+  const btn = document.getElementById("#comprarPrueba");
+  const PERFIL = document.querySelector("#PERFIL");
+
+  btn.addEventListener("click", function()){
+    if(PERFIL.style.display === "block"){
+      PERFIL.style.display = "none";
+    }else{
+      PERFIL.style.display = "block";
+    }
+  };
+
+</script>
+
+</section>
+	<div id ="PERFIL">
+      <h1>
+        Hola mundo!
+      </h1>
+
+
+    </div>
+
 	<!-- END PERFIL -->
 
 	<!-- RANKING -->
