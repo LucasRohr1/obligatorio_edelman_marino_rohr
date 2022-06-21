@@ -11,8 +11,5 @@
   "type": "module",
   "devDependencies": {
     "jest": "^26.6.3"
-  },
-  "dependencies": {
-    "jquery": "^3.6.0"
   }
 }
