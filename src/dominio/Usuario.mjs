@@ -32,6 +32,18 @@ export class Usuario {
   toString(){
     return (this.nombre + this.apellido)
   }
+
+  login(username, password){
+    if(username == this.username && password == this.password){
+      this.online = true
+      return true
+    } else {
+      return false
+    }
+  }
+  logout(){
+    this.online = false
+  }
 }
 
 export class NFT {

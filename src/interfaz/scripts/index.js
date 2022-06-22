@@ -1,4 +1,4 @@
-import sistema, { NFTs, NFT, Usuario } from "../../dominio/Usuario.mjs"
+import Sistema, { NFTs, NFT, Usuario } from "../../dominio/Usuario.mjs"
 
 import { MDCRipple } from '@material/ripple';
 import { MDCTopAppBar } from '@material/top-app-bar';
@@ -29,7 +29,7 @@ $(document).ready(function(){
 	$(".liked").on("click", function(){
 		alert("liked nfts")
 	});
-	$(".user").on("click", function(){
+	$(".user").on("click", function(){ //LO QUE SUCEDE CUANDO SE HACE CLICK EN EL ICONO DEL USUARIO
 		$(".hero").hide();
 		if(rootUser.online){
 			$(".userArticle").show();
@@ -38,19 +38,28 @@ $(document).ready(function(){
 		} else {
 			$(".login").show();
 			$(".hero").hide();
+			$(".btnLogin").on("click", function(){
+				if(rootUser.login($("#inputUsername").val(),$("#inputPassword").val())){
+					showPerfil()
+				} else{
+					alert("Datos Incorrectos")
+				}
+			})
 		}
 	});
-	$(".btnLogin").on("click", function(){
-			$(".userArticle").show();
-			$(".login").hide();
-	})
+
 	$(".compraButton").on("click", function(){
-		let datos = sistema.getListNft()
+		let datos = Nfts.getListNft()
 		var tend1 = document.getElementsByClassName("tend1")[0]
-		tend1.style.backgroundImage = "url("+datos.getImage()+")"
+		tend1.style.backgroundImage = "url("+datos[4].getImage()+")"
 		alert("Hello")
 	});
 });
+
+function showPerfil(){
+	$(".userArticle").show();
+	$(".login").hide();
+}
 
 var images = [
 	"../img/Tendencias/Tendencia1.jpg",
