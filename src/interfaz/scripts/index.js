@@ -71,3 +71,6 @@ $(document).ready(function(){
 //     console.log(peliculas);
 //   }
 // })
+
+//  INICIO SESION
+
