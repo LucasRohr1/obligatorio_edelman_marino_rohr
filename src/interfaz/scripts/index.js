@@ -13,27 +13,65 @@ var usuario = new Usuario()
 var Nfts = new NFTs()
 
 const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
+const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
 
 $(document).ready(function(){
+	// CARGA DE CLASES
 	$(".userArticle").hide();
 	$(".login").hide();
 	const rootUser = new Usuario("Root", "Admin", "admin", 1234);
 	for (let i = 100; i < 136; i++) {
 		Nfts.addNFT(new NFT(i, i, images[i-100]))
 	}
+	// CARGA DE NFTs EN EL HTML
+	for (let i = 0; i < 36; i++) {
+		// var slides = document.getElementsByClassName("slides1")
+		// slides.innerHTML = "";
+		// var segundoDiv = document.createElement("div")
+		// segundoDiv.setAttribute("class", "mdc-card fill-color($primary) my-card")
+		if(i<10){
+			//Crea card tendencia
+			// var primerDiv = document.createElement("div")
+			// primerDiv.setAttribute("class", "tendencia-"+i)
+			// primerDiv.appendChild(segundoDiv);
+			// slides.appendChild(primerDiv);
+		} else if (i<19) {
+			//Crea card arte
+		} else if(i<28) {
+			//Crea card deporte
+		} else {
+
+		}
+	}
+	// TERMINA LA CARGA
 	$(".home").on("click", function(){
 		$(".userArticle").hide();
 		$(".login").hide();
 		$(".hero").show();
 	});
 	$(".liked").on("click", function(){
-		alert("liked nfts")
+		if(rootUser.online){
+			showPerfil();
+			$(".nombreP").text(rootUser.nombre + " " + rootUser.apellido)
+			document.getElementsByClassName("slider favs").scrollIntoView({behavior: 'smooth'});
+		} else {
+			$(".login").show();
+			$(".hero").hide();
+			$(".btnLogin").on("click", function(){
+				if(rootUser.login($("#inputUsername").val(),$("#inputPassword").val())){
+					showPerfil();
+					$(".nombreP").text(rootUser.nombre + " " + rootUser.apellido);
+					document.getElementsByClassName("slider favs").scrollIntoView({behavior: 'smooth'});
+				} else{
+					snackbar.open();
+				}
+			})
+		}
 	});
 	$(".user").on("click", function(){ //LO QUE SUCEDE CUANDO SE HACE CLICK EN EL ICONO DEL USUARIO
 		$(".hero").hide();
 		if(rootUser.online){
-			$(".userArticle").show();
-			$(".login").hide();
+			showPerfil();
 			$(".nombreP").text(rootUser.nombre + " " + rootUser.apellido)
 		} else {
 			$(".login").show();
@@ -41,8 +79,9 @@ $(document).ready(function(){
 			$(".btnLogin").on("click", function(){
 				if(rootUser.login($("#inputUsername").val(),$("#inputPassword").val())){
 					showPerfil()
+					$(".nombreP").text(rootUser.nombre + " " + rootUser.apellido)
 				} else{
-					alert("Datos Incorrectos")
+					snackbar.open();
 				}
 			})
 		}
@@ -52,13 +91,13 @@ $(document).ready(function(){
 		let datos = Nfts.getListNft()
 		var tend1 = document.getElementsByClassName("tend1")[0]
 		tend1.style.backgroundImage = "url("+datos[4].getImage()+")"
-		alert("Hello")
 	});
 });
 
 function showPerfil(){
 	$(".userArticle").show();
 	$(".login").hide();
+	$(".hero").hide();
 }
 
 var images = [
@@ -99,55 +138,3 @@ var images = [
 	"../img/GIFs/g8.gif",
 	"../img/GIFs/g9.gif",
 ]
-
-// const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-// const topAppBar = new MDCTopAppBar(topAppBarElement);
-
-// const buttonRipple = new MDCRipple(document.querySelector('.mcd-button'));
-
-// buttonRipple.listen("material-icons mdc-top-app-bar__navigation-icon mdc-icon-button:activated", (activatedEventMenu) => {
-// 	alert("Funciona")
-// });
-
-// topAppBar.listen("MDCtopAppBar:activated", (activatedEvent) => {
-// 	alert("Funciona")
-// });
-
-// function myFunction(){
-// 	alert("Hello")
-// }
-
-// tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
-// 	document.querySelectorAll(".content").forEach((element, index) => {
-// 		if (index === activatedEvent.detail.index) {
-// 			element.classList.remove("sample-content--hidden");
-// 		} else {
-// 			element.classList.add("sample-content--hidden");
-// 		}
-// 	});
-// });
-
-// const textFieldTitle = new MDCTextField(document.getElementById('title'));
-// const textFieldYear = new MDCTextField(document.getElementById('year'));
-// const selectGenre = new MDCSelect(document.querySelector('.mdc-select'));
-
-// const addButton = new MDCRipple(document.getElementById('addButton'));
-// addButton.listen('click', () => {
-//   let title = textFieldTitle.value;
-//   let year = textFieldYear.value;
-//   let genre = selectGenre.value;
-//   try {
-//     let newPelicula = new Pelicula(title, genre, year);
-//     listaPeliculas.agregar(newPelicula);
-//   } catch (error) {
-//     const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
-//     snackbar.labelText = error.message;
-//     snackbar.open();
-//   } finally {
-//     let peliculas = listaPeliculas.getPeliculas();
-//     console.log(peliculas);
-//   }
-// })
-
-//  INICIO SESION
-

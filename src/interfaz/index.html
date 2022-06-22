@@ -44,8 +44,8 @@
 			</div>
 		</div>
 	</div>
+	<!-- HOME SECTION-->
 	<section id="home_screen" class="hero">
-		<!-- HOME SECTION-->
 		<H1>TRENDING <span>HOT</span>🔥</H1>
 		<div class="slider">
 			<div class="slides">
@@ -699,7 +699,7 @@
 		</section>
 		<section class="sectionPerfil">
 		<h1>FAVORITOS</h1>
-		<div class="slider">
+		<div class="slider" id="userFavs">
 			<div class="slides">
 				<div id="deporte-1">
 					<div class="mdc-card fill-color($primary) my-card">
@@ -746,11 +746,20 @@
 	</article>
 	<!-- END RANKING -->
 
-	<!-- COLECCIONES -->
-	<article>
+	<!-- START ERROR DIALOG -->
 
-	</article>
-	<!-- END COLECCIONES -->
+	<aside class="mdc-snackbar">
+		<div class="mdc-snackbar__surface" role="status" aria-relevant="additions">
+		  <div class="mdc-snackbar__label" aria-atomic="false">
+			Usuario o contraseña incorrecta
+		  </div>
+		  <div class="mdc-snackbar__actions" aria-atomic="true">
+		  </div>
+		</div>
+	  </aside>
+
+	<!-- END ERROR DIALOG -->
+	
 
 </body>
 <script src="bundle.js" async></script>
