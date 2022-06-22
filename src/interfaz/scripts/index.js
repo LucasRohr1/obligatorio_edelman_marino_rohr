@@ -6,6 +6,9 @@ import { MDCTabBar } from '@material/tab-bar';
 import { MDCTextField } from '@material/textfield';
 import { MDCSelect } from '@material/select';
 import {MDCSnackbar} from '@material/snackbar';
+import {MDCDialog} from '@material/dialog';
+
+const dialog = new MDCDialog(document.querySelector('.mdc-dialog'));
 
 import * as $ from "jquery/dist/jquery.min"
 
@@ -25,6 +28,8 @@ $(document).ready(function(){
 		$(".userArticle").hide();
 		$(".login").hide();
 		$(".hero").show();
+		//snackbar.open();
+		//dialog.layout;
 	});
 	$(".liked").on("click", function(){
 		alert("liked nfts")
@@ -90,6 +95,7 @@ var images = [
 	"../img/GIFs/g8.gif",
 	"../img/GIFs/g9.gif",
 ]
+const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
 
 // const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 // const topAppBar = new MDCTopAppBar(topAppBarElement);
