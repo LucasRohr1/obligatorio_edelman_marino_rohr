@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@material/dialog": "^14.0.0"
+  }
+}
