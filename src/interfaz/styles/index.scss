@@ -84,7 +84,7 @@ img {
 // HOME SCREEN
 
 #home_screen{
-	margin-top: 84px;
+	margin-top: 24px;
 }
 #home_screen h1{
 	padding: 20px;
@@ -203,17 +203,73 @@ mdc-card__actions{
 	color: white;
 }
 
+// END HOME SCREEN
+.content{
+	padding-left: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
 .perfil {
 	color: red;
-	font-size: 40px;
+	font-size: 4vw;
 }
-
 .nombreP{
 	font-size: 25px;
 }
 
+.sectionPerfil{
+	text-align: center;
+	background-color: #2a2a2a;
+	padding: 10px 20px;
+	margin: 20px 30px;
+}
 
-// END HOME SCREEN
+#idForm {
+	box-sizing: border-box;
+	background-color: $primary;
+}
+
+.formLogin{
+	background-color: #ffffff;
+	width: 500px;
+	margin: 50px auto 10px auto;
+	padding: 30px;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 10px -3px #333;
+}
+
+.inputLogin{
+	border-radius: 20px;
+	padding: 10px 15px;
+	width: 50%;
+	border: 1px solid #D9D9D9;
+	outline: none;
+	display: block;
+	margin: 20px auto 20px auto;
+}
+
+.btnLogin{
+	border-radius: 50px;
+	border: none;
+	background-color: $secondary;
+	width: 110px;
+	padding: 10px;
+	color: #000;
+	margin-top: 20px;
+	box-shadow: 0 2px 10px -3px $secondary;
+	display: block;
+	margin: 30px auto 10px auto;
+}
+
+#idCrearCuenta{
+    color: $secondary;
+    text-align: center;
+    display: block;
+    margin-top: 25px;
+}
 
 //INICIO SESION
 /*.box {
