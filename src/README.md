@@ -12,7 +12,7 @@ Documentación del uso de librerías externas (package.json)
 ## Interfaz de usuario
 
 - Interfaz de usuario web responsive. Es una página única con navegación entre secciones
-- En la carpeta [bocetosiu](En https://github.com/LucasRohr1/obligatorio_marino_rohr/tree/main/docs/bocetosiu) estan las imagines de la aplicacion
+- En la carpeta [Ver bocetos](https://github.com/LucasRohr1/obligatorio_marino_rohr/tree/main/docs/bocetosiu) estan las imagines de la aplicacion
 
 Implementación: Material Design Web Components
 
