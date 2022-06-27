@@ -17,4 +17,4 @@ Los informes académicos para cada entrega se realizan en los archivos README.md
 * [Informe entrega 1](docs/README.md)
 * [Informe entrega 2](src/README.md)
 
-
+Link del Repo: https://github.com/LucasRohr1/obligatorio_marino_rohr
