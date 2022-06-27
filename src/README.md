@@ -48,7 +48,7 @@ Hemos reportado issues para la segunda version del prototipo del proyecto con fu
 
 - **Lucas Rohr:** Personalmente estoy muy desconforme con la forma en que esta materia esta planificada para esta segunda entrega por muchas razones. La primera siendo la inmensidad de cosas que hay que hacer y aprender por cuenta propia cuando la **unica** experiencia y conocimiento mio del rubro es Programacion 1 y 2. Pase mas tiempo trancado tratando de resolver problemas de compatibilidad, configuraciones y demás, que en aprender. Este proyecto lo hubiese hecho a la perfeccion combinando lo aprendido en lo que concierne a documentacion y uso de git, junto con las herramientas que aprendi en Programacion 1 e investigando como hacer una IU moderna e intuitiva. Por otro lado, no me gusta nada copiar y pegar cientas de lineas de codigo sin saber que significa ni como funciona. En mi opinion, crear una aplicacion de 0 copiando y pegando la mayoria del codigo sin saber que hace es una pesima practica de programacion. Mi critica va con intencion de que sea constructiva para mejorarla. Los docentes me agradan, estoy desconforme con la materia en si.
 
--**Santiago Marino:**
+- **Santiago Marino:**
 
  En rasgos generales me pareció un trabajo interesante de desarrollar, donde pude aprender técnicas de documentación y uso de diversas herramientas, que van a ser útiles para mi desarrollo como profesional. De igual formar quería recalcar que me pareció un proyecto no adecuado para lo que se aprende en el curso, ya que exigía tener muchos conocimientos que no tenemos y que tampoco tenemos el tiempo necesario como para aprenderlos por nuestra cuenta. 
 
