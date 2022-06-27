@@ -11,9 +11,8 @@ Documentación del uso de librerías externas (package.json)
 
 ## Interfaz de usuario
 
-Interfaz de usuario web / mobile (responsive)
-
-Página única con navegación entre secciones
+- Interfaz de usuario web responsive. Es una página única con navegación entre secciones
+- En la carpeta [bocetosiu](En https://github.com/LucasRohr1/obligatorio_marino_rohr/tree/main/docs/bocetosiu) estan las imagines de la aplicacion
 
 Implementación: Material Design Web Components
 
@@ -37,11 +36,10 @@ Análisis estático de código: mostrar reducción de problemas
 
 Test unitarios en Jest
 
+[Ver testing exploratorio](En https://github.com/LucasRohr1/obligatorio_marino_rohr/tree/main/docs/bocetosiu)
+
 100% cobertura en clases de dominio
 
-
-| En la semana previa a la entrega se debe congelar el desarrollo (22-nov-2021).
-A partir de este punto solo se realizan actividades de test de sistema, reporte de issues y generación del informe académico.
 
 ## Test de sistema
 
@@ -53,19 +51,16 @@ Detallar sesiones de prueba exploratoria
 
 ## Reporte de issues
 
-Reportar issues (bugs, improvements, missing features) en GitHub 
+Los tipos (labels) issues reportados son:
+- documentation
+- missing feature
+- enhancement
 
-Aplicar buenas prácticas de reporte de issues
-
-Definir labels para tipos de issue y niveles de severidad
-
-Dejar issues abiertos para correcciones o mejoras futuras
-
-Sumarizar número de issues reportados por tipo
-
-Realizar una evaluación global de la calidad
+Hemos reportado issues para la segunda version del prototipo del proyecto con funcionalidades importantes tales como la compr y venta de NFTs
 
 ## Reflexión
+
+[Ver reflexion final](En https://github.com/LucasRohr1/obligatorio_marino_rohr/tree/main/docs)
 
 Detalle del trabajo individual
 
