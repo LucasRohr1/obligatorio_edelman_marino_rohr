@@ -52,3 +52,5 @@ Hemos reportado issues para la segunda version del prototipo del proyecto con fu
 
  En rasgos generales me pareció un trabajo interesante de desarrollar, donde pude aprender técnicas de documentación y uso de diversas herramientas, que van a ser útiles para mi desarrollo como profesional. De igual formar quería recalcar que me pareció un proyecto no adecuado para lo que se aprende en el curso, ya que exigía tener muchos conocimientos que no tenemos y que tampoco tenemos el tiempo necesario como para aprenderlos por nuestra cuenta. 
 
+- **Martín Edelman:**
+- El trabajo en grupo se logró adecuadamente, con algunos percanses en el tiempo de realización de tareas. Apredí a utilizar material design, material design guidelines, testing, node, GitHub y un buen uso de código. Creo que el proyecto estuvo bien, pero límitado de tiempo. 
