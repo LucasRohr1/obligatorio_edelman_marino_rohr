@@ -1,6 +1,10 @@
 # Informe académico entrega 2
 Fecha de entrega: 29-nov-2021
 
+#Credenciales de acceso:
+- Usuario: admin
+- Clave: 1234
+
 ## Construcción
 
 - Implementación de funciones principales (sin la necesidad de persistencia de datos)
