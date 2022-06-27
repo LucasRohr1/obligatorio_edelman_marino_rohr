@@ -12,6 +12,7 @@ npm install
 cd ..
 cd interfaz
 npm install
+npm install jquery
 ```
 Para ejecutar la aplicación y acceder a la interfaz de usuario:
 ```
