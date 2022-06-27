@@ -1,1 +1,1 @@
-
+Para ser un primer _prototipo_, consideramos que la calidad es _buena_ a pesar de no contar con funcionalidades importantes. El sitio es intuitivo y responsivo. Al presionar los botones (salvo el de comprar) la pagina dirige correctamenta a donde debe.
