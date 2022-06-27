@@ -1,7 +1,7 @@
 # Informe académico entrega 2
 Fecha de entrega: 29-nov-2021
 
-#Credenciales de acceso:
+# Credenciales de acceso:
 - Usuario: admin
 - Clave: 1234
 
