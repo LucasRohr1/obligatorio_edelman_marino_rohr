@@ -60,7 +60,7 @@ Hemos reportado issues para la segunda version del prototipo del proyecto con fu
 
 ## Reflexión
 
-[Ver reflexion final](En https://github.com/LucasRohr1/obligatorio_marino_rohr/tree/main/docs)
+[Ver reflexion final](https://github.com/LucasRohr1/obligatorio_marino_rohr/tree/main/docs)
 
 Detalle del trabajo individual
 
