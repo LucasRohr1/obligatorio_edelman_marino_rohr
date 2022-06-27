@@ -13,41 +13,27 @@ Documentación del uso de librerías externas (package.json)
 
 - Interfaz de usuario web responsive. Es una página única con navegación entre secciones
 - En la carpeta [Ver bocetos](https://github.com/LucasRohr1/obligatorio_marino_rohr/tree/main/docs/bocetosiu) estan las imagines de la aplicacion
-
-Implementación: Material Design Web Components
-
-Aplicar un sistema de diseño y principios de usabilidad
-
-Cumplimiento de estándar de accesibilidad WCAG
-
-Seguir especificación de estilo
+- En la carpeta [src](https://github.com/LucasRohr1/obligatorio_marino_rohr/tree/main/src) se puede ver como utilizamos componentes de material design y seguimos estandares de codificacion correspondientes
 
 ## Codificación
 
-IDE Visual Studio Code: configuración común del equipo
-
-Estándares de codificación Google (HTML, CSS, JavaScript)
-
-Buenas prácticas de OOP: separación de lógica e interfaz
-
-Análisis estático de código: mostrar reducción de problemas
+- IDE Visual Studio Code: configuración común del equipo
+- Estándares de codificación de Material Design de Google (HTML, CSS, JavaScript)
+- Separación de lógica e interfaz
+- Priorizamos no repetir codigo y seguir buenas practicas de programacion en vez de hacer lo contrario para poder dar de alta la funcionalidad de compra. Decidimos que crear issues y desarrollar las funcionalidades hasta implementarlas correctamente es el mejor camino a seguir.
 
 ## Test unitario
 
 Test unitarios en Jest
-
-[Ver testing exploratorio](En https://github.com/LucasRohr1/obligatorio_marino_rohr/tree/main/docs/bocetosiu)
 
 100% cobertura en clases de dominio
 
 
 ## Test de sistema
 
-Realizar test de sistema en un entorno separado del desarrollo
+Debido a nuestra falta de funcionalidades no logramos generar un buen ambiente de testing. Por lo que la unica estrategia de testing que implementamos fue el exploratorio ya que seria el adecuado para el actual prototipo.
 
-Generar casos de prueba aplicando técnica partición equivalente
-
-Detallar sesiones de prueba exploratoria
+Sesiones de prueba exploratoria
 
 ## Reporte de issues
 
